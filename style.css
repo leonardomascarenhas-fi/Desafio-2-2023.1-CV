@@ -1,0 +1,116 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    background-color: #141414;
+}
+.header {
+    background-color: #000000 !important;
+    height: 123px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img {
+    background-color: black !important;
+    margin-right: 10px;
+}
+.big-container {
+    background-color: #141414;
+    position: relative;
+}
+.big-container .lancamentos {
+    background-color: #000000;
+    padding: 32px;
+    margin: 75px 224px;
+}
+.big-container .lancamentos h1 {
+    background-color: #00A303;
+    color: white;
+}
+.big-container .lancamentos .container-lancamentos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #000000;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.big-container .lancamentos .container-lancamentos .lancamento-card {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+}
+.big-container .lancamentos .container-lancamentos .lancamento-card img {
+    width: 100%;
+    height: 100%;
+}
+.big-container .lancamentos .container-lancamentos .lancamento-card h2, p {
+    color: white;
+}
+
+.playIcon{
+    position: absolute;
+    top: 45%;
+    right: 12%;
+    transform: translateY(10px);
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,1));
+    opacity: 0;
+    transition: all 0.4s;
+}
+.circle{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: red;
+    display: grid;
+    place-items: center;
+    transform: scale(0.95);
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid white;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+}
+
+.big-container .albums h2{
+    background-color: #000000;
+    color: white;
+}
+
+.big-container .right-bannher {
+    width: 96px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.big-container .right-bannher .green {
+    background-color: green;
+    width: 40px;
+}
+.big-container .right-bannher .yellow {
+    background-color: yellow;
+    width: 40px;
+}
+.big-container .right-bannher .red {
+    background-color: red;
+    width: 40px;
+}
+
+@media (max-width: 375px) {
+    .big-container .lancamentos {
+        background-color: #000000;
+        padding: 16px;
+        margin: 20px 25px;
+}
+}
